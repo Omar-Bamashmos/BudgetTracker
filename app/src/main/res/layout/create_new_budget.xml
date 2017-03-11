@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/budgetName"
+            android:hint="@string/budget_name_hint"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="10px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/budgetLimit"
+            android:layout_marginBottom="10px"
+            android:hint="@string/budget_limit_hint"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10px"
+             />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="date"
+            android:layout_marginBottom="30px"
+            android:hint="dd/mm/yyyy"
+            android:id="@+id/datePicker"/>
+
+    </LinearLayout>
+
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Today&apos;s Date"
+        android:id="@+id/ifToday"
+        android:checked="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/colorMainTheme"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Budget Length"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/colorMainTheme"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:color="@color/colorPrimary"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly"
+            android:id="@+id/Monthly"
+            android:layout_marginTop="20px"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly"
+            android:id="@+id/weekly"
+            android:layout_marginTop="20px"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:id="@+id/other"
+                />
+            <EditText
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/otherBudgetDur"
+                android:layout_alignBottom="@+id/other"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="30px"
+                />
+        </LinearLayout>
+
+
+
+
+    </RadioGroup>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:background="@color/colorMainTheme"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80px"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clear"
+        android:background="@color/colorMainTheme"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"/>
+
+
+</LinearLayout>

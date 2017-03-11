@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="300px"
+    android:id="@+id/purchaseRow"
+    android:layout_marginTop="20px"
+    android:layout_marginBottom="20px"
+    >
+
+    <TextView
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="15px"
+        android:textSize="9pt"
+        android:text="1"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="270px"
+        android:id="@+id/name_memo_row"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorMainTheme"
+            android:id="@+id/nameP"
+            android:text="name"/>
+
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="7pt"
+            android:textAllCaps="false"
+            android:id="@+id/memo"
+            android:textColor="@color/colorMainTheme"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="150px"
+        android:textSize="7pt"
+        android:textAllCaps="false"
+        android:id="@+id/amountP"
+        android:layout_marginTop="15px"
+        android:textColor="@color/colorMainTheme"
+            />
+
+        <Button
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_marginTop="40px"
+            android:background="@color/colorMainTheme"
+            android:text="Del"
+            android:textAllCaps="true"
+            android:textSize="5pt"
+            android:gravity="center"
+            android:id="@+id/delete_button"
+            android:layout_marginLeft="20px"
+            />
+
+
+
+
+
+
+
+</LinearLayout>

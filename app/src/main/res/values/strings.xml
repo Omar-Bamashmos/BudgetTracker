@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Budget Tracker</string>
+    <string name="budget_name">Budget Name</string>
+    <string name="budget_name_hint">Enter Budget Name</string>
+    <string name="budget_limit_hint">Budget Limit</string>
+    <string name="remaining_days">Remaining Days :</string>
+    <string name="memo">Memo</string>
+    <string name="amount">Amount</string>
+    <string name="purchase_amount">Purchase Amount-$</string>
+    <string name="delete">delete</string>
+    <string name="existing">existing</string>
+</resources>

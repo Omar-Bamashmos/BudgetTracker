@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainTheme">
+        <TextView
+            android:layout_width="50px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_marginBottom="20px"
+            android:text="#"
+            android:layout_marginRight="10px"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:id="@+id/num"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20px"
+
+            android:text="Name/Memo"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:id="@+id/name"
+
+
+            />
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20px"
+            android:text="$$$"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:id="@+id/price"
+
+            />
+
+
+
+    </TableRow>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/table">
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>
